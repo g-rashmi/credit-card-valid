@@ -24,7 +24,7 @@ if(i%2!=0){
       arr[i]=x;
     
     }
-      cout<<arr[i]<<" ";
+      //cout<<arr[i]<<" ";
     sum+=arr[i];
   }
 if(sum%10==0) {
