@@ -1,12 +1,18 @@
+// IMPLEMENTATION OF LUHN ALGO 
+
 #include<bits/stdc++.h>
 using namespace std; 
+
 void solve(){cout << "Enter the elements of the array: ";
   int arr[16];
   int sum=0;
   for(int i=0;i<16;i++) 
   cin>>arr[i];
   for(int i=0;i<16;i++){
-if(i%2!=0){sum+=arr[i]; continue;}
+if(i%2!=0){
+  sum+=arr[i]; 
+  continue; 
+}
     arr[i]+=arr[i];
     
     if(arr[i]>9){
